@@ -6,7 +6,36 @@ This repository contains a deep learning model for detecting toxicity in comment
 
 ## Dataset
 
-The dataset used for training the model is sourced from [Kaggle's Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge). It contains comments from Wikipedia's talk page edits, labeled for various types of toxicity.
+The dataset used for training the model is sourced from [Kaggle's Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge). It contains comments from Wikipedia's talk page edits, labeled for various types of toxicity. This rich dataset is designed to help build models capable of identifying toxic comments and includes the following categories:
+
+- **Toxic**: Comments that are rude, disrespectful, or otherwise likely to make people leave a discussion.
+- **Severe Toxic**: Extremely offensive comments.
+- **Obscene**: Comments containing obscene language.
+- **Threat**: Comments that contain threats of violence or harm.
+- **Insult**: Comments that contain insulting language.
+- **Identity Hate**: Comments that contain hate speech targeting individuals or groups based on identity characteristics such as race, religion, gender, etc.
+
+### Dataset Composition
+
+The dataset comprises:
+- **Train Data**: The dataset contains 159,571 comments, each labeled with various toxicity categories. For the purpose of model development, this data is further split into training, testing, and validation subsets, as detailed in the [model training file](https://github.com/katakampranav/Comment-Toxicity-Model/blob/main/model.ipynb).
+
+### Data Distribution
+
+The data is imbalanced, with a higher proportion of non-toxic comments compared to toxic ones. This imbalance poses a challenge and requires careful handling during model training to ensure that the model does not become biased towards predicting non-toxicity.
+
+### Example Entries
+
+Here are a few example entries from the dataset:
+
+| Comment | Toxic | Severe Toxic | Obscene | Threat | Insult | Identity Hate |
+|---------|-------|--------------|---------|--------|--------|---------------|
+| "You're such a stupid idiot." | 1 | 0 | 0 | 0 | 1 | 0 |
+| "I love this!" | 0 | 0 | 0 | 0 | 0 | 0 |
+| "This is a terrible idea, and you're an idiot for suggesting it." | 1 | 0 | 0 | 0 | 1 | 0 |
+
+By leveraging this dataset, the model aims to accurately identify and classify various forms of toxic comments, contributing to a safer and more respectful online discourse.
+
 
 ## Model Architecture
 
@@ -75,19 +104,21 @@ You can launch the Gradio interface by running the deployment script. This inter
 
 Below are some example results from the Gradio interface. These results demonstrate the model's ability to classify comments into different toxicity categories. (Images to be added later)
 
-### *"These are examples of a toxic comment."*
+### *These are examples of a toxic comment.*
 
 ![Screenshot 2024-08-01 232051](https://github.com/user-attachments/assets/f284c642-5e90-4ec4-858d-d334a1368ad9)
 
 ![Screenshot 2024-08-01 232239](https://github.com/user-attachments/assets/0d48326b-ca9a-4d6b-ac43-484b5d74ddd4)
 
-### *"This is an example of a non-toxic comment."*
+### *This is an example of a non-toxic comment.*
 
 ![Screenshot 2024-08-01 232339](https://github.com/user-attachments/assets/955937fe-46a1-475e-9426-deec29baa1a3)
 
 ## Author
 
-This project was developed by [katakampranav](https://github.com/katakampranav).
+This Comment Toxicity Model was developed by :
+-	[@katakampranav](https://github.com/katakampranav)
+-	Repository : https://github.com/katakampranav/Comment-Toxicity-Model
 
 ## Feedback
 
