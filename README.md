@@ -75,11 +75,12 @@ The project requires the following dependencies:
 - Pandas
 - Numpy
 - Gradio
+which are already mentioned in requirements.txt file
 
 You can install these dependencies using the following command:
 
 ```sh
-pip install tensorflow pandas numpy gradio
+pip install -r requirements.txt
 ```
 
 ## Usage
