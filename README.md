@@ -51,7 +51,7 @@ The model is trained using the binary cross-entropy loss function and the Adam o
 
 ### Training Time and Performance
 
-Training this model was time-consuming due to the complexity of the LSTM architecture and the size of the dataset. It took approximately 10 hours to train the model for just 10 epochs, and the accuracy achieved was only around 50%. Although this level of accuracy is not optimal, it highlights the challenges involved in training deep learning models on large datasets.
+Training this model was time-consuming due to the complexity of the LSTM architecture and the size of the dataset. It took approximately 10 hours to train the model for just 10 epochs, and the accuracy achieved was only around 70%. Although this level of accuracy is not so worst but pretty good, it highlights the challenges involved in training deep learning models on large datasets.
 
 ![Screenshot 2024-08-01 232437](https://github.com/user-attachments/assets/e4eab0f1-6424-4fd2-9e6a-872b40104239)
 
